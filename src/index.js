@@ -1,22 +1,20 @@
 import React from 'react';
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
-import combineReducer from './reducers/index'
 import {render} from 'react-dom'
 import {BrowserRouter, Route } from 'react-router-dom'
 import './helpers/vendor'
 import HomeContainer from "./containers/HomeContainer";
-
-const store = createStore(combineReducer);
+import HeaderComponent from "./components/header/HeaderComponent";
+import store from './Store'
 
 render(
-    <Provider store={store}>
+    <Provider store={store({})}>
         <BrowserRouter>
-            <div>
+            <div style={{height:'100%'}}>
+                <HeaderComponent/>
                 <Route path='/' component={HomeContainer} />
             </div>
         </BrowserRouter>
     </Provider>,
     document.getElementById('app')
 );
-module.hot.accept();

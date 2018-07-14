@@ -1,0 +1,11 @@
+.header{
+  flex-grow: 1;
+  z-index: 999;
+  .flex{
+    flex-grow: 1;
+    //font-family: Roboto Mono,sans-serif;
+  }
+  .toolbar{
+    background-color: #2e0e36;
+  }
+}
