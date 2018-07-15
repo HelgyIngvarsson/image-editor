@@ -13,7 +13,7 @@ export default class RightPanelComponent extends Component{
     render(){
         return(
             <div className='right-bar'>
-                <List component="nav">
+                <List component="nav" className='nav'>
                     <ListItem button>
                         <ListItemText primary="Inbox" />
                     </ListItem>

@@ -13,7 +13,7 @@ export default class LeftPanelComponent extends Component{
     render(){
         return(
             <div className='left-bar'>
-                <List component="nav">
+                <List component="nav" className='nav'>
                     <ListItem button>
                         <ListItemText primary="Inbox" />
                     </ListItem>

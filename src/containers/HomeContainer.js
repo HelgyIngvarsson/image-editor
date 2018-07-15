@@ -7,10 +7,14 @@ class HomeContainer extends Component{
         super(props)
     }
 
+    uploadImage = (image) =>{
+
+    };
+
     render(){
         const {image} = this.props.image;
         return(
-            <HomeComponent image={image} />
+            <HomeComponent image={image} uploadImage={this.uploadImage} />
         );
     }
 }
